@@ -1,0 +1,124 @@
+@import "./mixins.scss";
+
+$container-padding: 7.3rem;
+$clr-white: #fff;
+$clr-black: #000;
+$clr-graphite: #42413d;
+$clr-dark-grey: #4B4B4B;
+$clr-light-gray: #f8f9fa;
+$clr-cyan: #dce5e2;
+$clr-dark-cyan: #68786c;
+$clr-silver: #eaebe6;
+$clr-blue: #25414c;
+$clr-light-blue: #019ec2;
+
+$radius:3.2rem;
+$radius-card: 1.6rem;
+$radius-btn:20rem;
+
+$fz-xxl:5.8rem;
+$fz-xl:4.2rem;
+$fz-l:3.2rem;
+$fz-xm: 2.8rem;
+$fz-m:2.2rem;
+$fz-s:1.6rem;
+$fz-xs:1.4rem;
+
+$shadow: 0 4px 35px 0 rgba(0, 0, 0, 0.25);
+
+$transition-super-fast:0.1s;
+$transition-fast: 0.3s;
+$transition-medium: 0.5s;
+$transition-slow: 1s;
+$ease-in: cubic-bezier(0.42, 0, 1, 1);
+$ease-out: cubic-bezier(0, 0, 0.58, 1);
+$ease-in-out: cubic-bezier(0.42, 0, 0.58, 1);
+
+
+@keyframes show {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes shadow {
+    0%{
+        box-shadow: 100px 100px 38px -90px rgba(34, 60, 80, 0.2);
+    }
+    15%{
+        box-shadow: 100px 0px 38px -90px rgba(34, 60, 80, 0.2);
+    }
+    25%{
+        box-shadow: 100px -100px 38px -90px rgba(34, 60, 80, 0.2);
+    }
+    40%{
+        box-shadow: 9px -100px 38px -90px rgba(34, 60, 80, 0.2);
+    }
+    50%{
+        box-shadow: -100px -100px 38px -90px rgba(34, 60, 80, 0.2);
+    }
+    65%{
+        box-shadow: -100px -21px 38px -90px rgba(34, 60, 80, 0.2);
+    }
+    75%{
+        box-shadow: -100px 100px 38px -90px rgba(34, 60, 80, 0.2);
+    }
+    88%{
+        box-shadow: 0px 100px 38px -90px rgba(34, 60, 80, 0.2);
+    }
+    100%{
+        box-shadow: 100px 100px 38px -90px rgba(34, 60, 80, 0.2);
+    }
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Readex Pro', sans-serif;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul{ 
+    list-style: none;
+}
+.container{
+    width: 1294px;
+    margin: 0 auto;
+}
+hr{
+    color: $clr-cyan;
+}
+img{
+    &::selection{
+        display: none;
+    }
+}
+@media screen and (max-width:1080px) {
+    .container{
+        width: 1000px;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width:768px) {
+    .container{
+        width: 720px;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width:375px) {
+    .container{
+        width: 340px;
+        margin: 0 auto;
+    }
+}

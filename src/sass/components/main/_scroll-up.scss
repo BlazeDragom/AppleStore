@@ -1,0 +1,27 @@
+@import "../../cta.scss";
+@import "../../mixins.scss";
+
+.scroll-up{
+    display: inline-block;
+    width: 10rem;
+    height: 100vh;
+    position: fixed;
+    top: 85%;
+    left: 5rem;
+    .up{
+        width: 2rem;
+        text-align: center;
+        display: inline-block;
+        font-size: $fz-xs;
+    }
+}
+@media screen and (max-width:1080px) {
+    .scroll-up{
+        left: 1rem;
+    }
+}
+@media screen and (max-width:768px) {
+    .scroll-up{
+        display: none;
+    }
+}

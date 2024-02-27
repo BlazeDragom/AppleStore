@@ -1,0 +1,18 @@
+@import "../cta.scss";
+
+.btn{
+    display: inline-block;
+    padding: 1.4rem 5.3rem;
+    border: 1px solid $clr-black;
+    border-radius: $radius-btn;
+
+    font-size: 1.8rem;
+    transition: $transition-super-fast $ease-in;
+    &:hover{
+        color: $clr-dark-cyan;
+        border: 1px solid $clr-dark-cyan;
+    }
+    &:active{
+        transform: scale(0.97);
+    }
+}

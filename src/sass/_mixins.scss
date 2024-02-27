@@ -1,0 +1,40 @@
+@mixin flex-row() {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flex-column() {
+    display: flex;
+    flex-direction: column;
+}
+@mixin flex-column-reverse() {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+@mixin title($fz: $fz-xl, $fz-text: $fz-xs) {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    .title-top {
+        font-size: $fz;
+        font-weight: normal;
+    }
+    .title-bottom {
+        margin-top: 0.9rem;
+        font-size: $fz-text;
+        font-weight: normal;
+        text-align: center;
+    }
+}
+
+@mixin color-icon($color: $clr-graphite) {
+    display: block;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background: $color;
+    box-shadow: $shadow;
+}
+

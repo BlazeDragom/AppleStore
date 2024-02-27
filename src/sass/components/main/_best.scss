@@ -1,0 +1,65 @@
+@import "../../cta.scss";
+@import "../../mixins.scss";
+
+.best{
+    margin-top: 4.7rem;
+    .best_title{
+        @include title();
+    }
+    .best_products{
+        margin-top: 5.6rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2.8rem;
+        .product-card{
+            text-align: center;
+            background: $clr-light-gray;
+            border-radius: $radius-card;
+            padding-bottom: 2rem;
+            .top-title{
+                margin-top: 4.1rem;
+                font-size: $fz-xs;
+                font-weight: normal;
+            }
+            .bottom-title{
+                font-size: $fz-xm;
+                font-weight: normal;
+                line-height: 125%;
+            }
+            img{
+                width: 30rem;
+            }
+            .btn--product{
+                margin-top: 3rem;
+                margin-bottom: 3rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .best{
+        .best_title{
+            @include title($fz-xm, $fz-xs);
+        }
+        .best_products{
+            grid-template-columns: repeat(2, 1fr);
+            .product-card{
+                &:last-child{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:375px) {
+    .best{
+        .best_title{
+            @include title($fz-m, $fz-xs);
+        }
+        .best_products{
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}

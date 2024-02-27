@@ -1,0 +1,170 @@
+@import "../../cta.scss";
+@import "../../mixins.scss";
+
+.categories {
+    margin-top: 5.6rem;
+    .categories_title {
+        @include title();
+    }
+    .categories_cards-holder {
+        margin-top: 5.6rem;
+        display: grid;
+        grid-template-areas:
+            "a a b c"
+            "a a b c"
+            "d d b c";
+        gap: 4.2rem 1.6rem;
+        .first{
+            grid-area: a;
+            border-radius: $radius-card;
+            .image{
+                text-align: center;
+            }
+            .card_content{
+                text-align: end;
+                @include flex-column();
+                align-items: end;
+                margin-right: 4.2rem;
+                .top{
+                    font-family: "Inter";
+                    font-size: $fz-s;
+                }
+                .bottom{
+                    width: 19.2rem;
+                    font-size: $fz-l;
+                }
+            }
+        }
+        .second{
+            @include flex-column();
+            justify-content: center;
+            grid-area: b;
+            border-radius: $radius-card;
+            .image{
+                .img{
+                    width: 100%;
+                }
+            }
+            .card_content{
+                margin-top: 4rem;
+                text-align:center;
+                @include flex-column();
+                align-items: center;
+                margin-right: 4.2rem;
+                .top{
+                    font-family: "Inter";
+                    font-size: $fz-s;
+                }
+                .bottom{
+                    width: 19.2rem;
+                    font-size: $fz-l;
+                }
+            }
+        }
+        .third{
+            @include flex-column-reverse();
+            grid-area: c;
+            border-radius: $radius-card;
+            .image{
+                text-align: center;
+                .img{
+                    width: 40rem;
+                }
+            }
+            .card_content{
+                text-align: center;
+                @include flex-column();
+                align-items: center;
+                margin-right: 4.2rem;
+                margin-bottom: 4.2rem;
+                .top{
+                    font-family: "Inter";
+                    font-size: $fz-s;
+                }
+                .bottom{
+                    width: 19.2rem;
+                    font-size: $fz-l;
+                }
+            }
+        }
+        .fourth{
+            @include flex-row();
+            grid-area: d;
+            border-radius: $radius-card;
+            .card_content{
+                text-align: end;
+                @include flex-column();
+                align-items: end;
+                margin-right: 4.2rem;
+                .top{
+                    font-size: $fz-s;
+                }
+                .bottom{
+                    width: 19.2rem;
+                    font-size: $fz-l;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .categories{
+        .categories_title{
+            @include title($fz-xm, $fz-xs);
+        }
+        .categories_cards-holder{
+            grid-template-areas: 
+            "a a b"
+            "a a b"
+            "d d b"
+            "c c c";
+        }
+    }
+}
+
+@media screen and (max-width:375px) {
+    .categories{
+        .categories_title{
+            text-align: center;
+            @include title($fz-m, $fz-xs);
+        }
+        .categories_cards-holder{
+            grid-template-areas: 
+            "a"
+            "d"
+            "b"
+            "b"
+            "c"
+            "c";
+            .second{
+                .image{
+                    display: grid;
+                    place-items: center;
+                    .img{
+                        width: 20rem;
+                    }
+                }
+            }
+            .third{
+                .image{
+                    display: grid;
+                    place-items: center;
+                    .img{
+                        width: 20rem;
+                    }
+                }
+            }
+            .fourth{
+                display: block;
+                .image{
+                    display: grid;
+                    place-items: center;
+                    .img{
+                        width: 20rem;
+                    }
+                }
+            }
+        }
+    }
+}
