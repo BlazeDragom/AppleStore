@@ -53,7 +53,7 @@
     }
 }
 
-@media screen and (max-width:375px) {
+@media screen and (max-width:376px) {
     .best{
         .best_title{
             @include title($fz-m, $fz-xs);

@@ -98,6 +98,11 @@
                                 color: $clr-light-blue;
                                 border: 1px solid $clr-light-blue;
                             }
+                            &:active{
+                                @include click;
+                                color: $clr-light-blue;
+                                border: 1px solid $clr-light-blue;
+                            }
                         }
                     }
                 }
@@ -122,7 +127,7 @@
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
     .order {
         .order_title {
             @include title($fz-m, $fz-xs);
@@ -137,6 +142,9 @@
             perspective:50rem;
             transition: transform 1s;
             transform-style: preserve-3d;
+            .order_gallery{
+                cursor: pointer;
+            }
             .order_gallery,
             .order_content {
                 position: absolute;
@@ -163,6 +171,9 @@
                 }
             }
             &:hover {
+                transform: rotateY( 180deg );
+            }
+            &:focus {
                 transform: rotateY( 180deg );
             }
         }

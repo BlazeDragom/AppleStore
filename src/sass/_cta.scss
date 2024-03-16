@@ -84,10 +84,13 @@ $ease-in-out: cubic-bezier(0.42, 0, 0.58, 1);
 html{
     font-size: 10px;
     scroll-behavior: smooth;
+    @include respond-to('phone-375'){
+    }
 }
 a{
     text-decoration: none;
     color: inherit;
+    @include click();
 }
 ul{ 
     list-style: none;
@@ -116,7 +119,7 @@ img{
         margin: 0 auto;
     }
 }
-@media screen and (max-width:375px) {
+@media screen and (max-width:376px) {
     .container{
         width: 340px;
         margin: 0 auto;

@@ -24,6 +24,16 @@
             margin-top: 3rem;
         }
     }
+    .rec-image{
+        img{
+            width: 64.7rem;
+            height: 55rem;
+            @include respond-to('phone-375'){
+                width: 34rem;
+                height: 28rem;
+            }
+        }
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -42,19 +52,13 @@
     }
 }
 
-@media screen and (max-width:375px) {
+@media screen and (max-width:376px) {
     .recomendation{
         margin-top: 4.5rem;
         .rec_content{
             margin-left: 2rem;
             .rec-text{
                 width: 30rem;
-            }
-            
-        }
-        .rec-image{
-            img{
-                width: 100%;
             }
         }
     }

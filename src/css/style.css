@@ -102,10 +102,11 @@ html {
   font-size: 10px;
   scroll-behavior: smooth;
 }
-
 a {
   text-decoration: none;
   color: inherit;
+  position: relative;
+  top: 0.1rem;
 }
 
 ul {
@@ -141,7 +142,7 @@ img::selection {
     margin: 0 auto;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
   .container {
     width: 340px;
     margin: 0 auto;
@@ -205,10 +206,11 @@ html {
   font-size: 10px;
   scroll-behavior: smooth;
 }
-
 a {
   text-decoration: none;
   color: inherit;
+  position: relative;
+  top: 0.1rem;
 }
 
 ul {
@@ -244,7 +246,7 @@ img::selection {
     margin: 0 auto;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
   .container {
     width: 340px;
     margin: 0 auto;
@@ -326,10 +328,11 @@ html {
   font-size: 10px;
   scroll-behavior: smooth;
 }
-
 a {
   text-decoration: none;
   color: inherit;
+  position: relative;
+  top: 0.1rem;
 }
 
 ul {
@@ -365,7 +368,7 @@ img::selection {
     margin: 0 auto;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
   .container {
     width: 340px;
     margin: 0 auto;
@@ -460,10 +463,11 @@ html {
   font-size: 10px;
   scroll-behavior: smooth;
 }
-
 a {
   text-decoration: none;
   color: inherit;
+  position: relative;
+  top: 0.1rem;
 }
 
 ul {
@@ -499,7 +503,7 @@ img::selection {
     margin: 0 auto;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
   .container {
     width: 340px;
     margin: 0 auto;
@@ -708,23 +712,27 @@ img::selection {
     display: none;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
   .header {
     margin: 3rem 2rem;
   }
   .header .header_content .burger-menu .burger_list {
+    width: 340px;
     gap: 1rem;
     left: -28rem;
   }
-  .header .header_content .burger-menu .burger_list .second {
+  .header .header_content .burger-menu .burger_list li {
+    position: relative;
+  }
+  .header .header_content .burger-menu .burger_list li:nth-child(2) {
     top: 3.5rem;
     left: -4rem;
   }
-  .header .header_content .burger-menu .burger_list .third {
+  .header .header_content .burger-menu .burger_list li:nth-child(3) {
     top: 3.5rem;
     left: -4rem;
   }
-  .header .header_content .burger-menu .burger_list .fourth {
+  .header .header_content .burger-menu .burger_list li:nth-child(4) {
     left: -8rem;
   }
 }
@@ -786,10 +794,11 @@ html {
   font-size: 10px;
   scroll-behavior: smooth;
 }
-
 a {
   text-decoration: none;
   color: inherit;
+  position: relative;
+  top: 0.1rem;
 }
 
 ul {
@@ -825,7 +834,7 @@ img::selection {
     margin: 0 auto;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
   .container {
     width: 340px;
     margin: 0 auto;
@@ -925,7 +934,7 @@ img::selection {
     font-size: 1.4rem;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
   .footer {
     height: 20rem;
   }
@@ -1002,10 +1011,11 @@ html {
   font-size: 10px;
   scroll-behavior: smooth;
 }
-
 a {
   text-decoration: none;
   color: inherit;
+  position: relative;
+  top: 0.1rem;
 }
 
 ul {
@@ -1041,7 +1051,7 @@ img::selection {
     margin: 0 auto;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
   .container {
     width: 340px;
     margin: 0 auto;
@@ -1077,6 +1087,16 @@ img::selection {
   display: inline-block;
   margin-top: 3rem;
 }
+.recomendation .rec-image img {
+  width: 64.7rem;
+  height: 55rem;
+}
+@media (max-width: 376px) {
+  .recomendation .rec-image img {
+    width: 34rem;
+    height: 28rem;
+  }
+}
 
 @media screen and (max-width: 768px) {
   .recomendation {
@@ -1093,7 +1113,7 @@ img::selection {
     width: 50rem;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
   .recomendation {
     margin-top: 4.5rem;
   }
@@ -1102,9 +1122,6 @@ img::selection {
   }
   .recomendation .rec_content .rec-text {
     width: 30rem;
-  }
-  .recomendation .rec-image img {
-    width: 100%;
   }
 }
 @keyframes show {
@@ -1165,10 +1182,11 @@ html {
   font-size: 10px;
   scroll-behavior: smooth;
 }
-
 a {
   text-decoration: none;
   color: inherit;
+  position: relative;
+  top: 0.1rem;
 }
 
 ul {
@@ -1204,7 +1222,7 @@ img::selection {
     margin: 0 auto;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
   .container {
     width: 340px;
     margin: 0 auto;
@@ -1378,6 +1396,13 @@ img::selection {
   font-size: 3.2rem;
 }
 
+@media screen and (max-width: 1080px) {
+  .categories .categories_cards-holder .third .image .img {
+    width: 28rem;
+    border-radius: 3.2rem;
+    margin-bottom: 1rem;
+  }
+}
 @media screen and (max-width: 768px) {
   .categories .categories_title {
     width: 100%;
@@ -1398,7 +1423,7 @@ img::selection {
     grid-template-areas: "a a b" "a a b" "d d b" "c c c";
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
   .categories .categories_title {
     text-align: center;
     width: 100%;
@@ -1501,10 +1526,11 @@ html {
   font-size: 10px;
   scroll-behavior: smooth;
 }
-
 a {
   text-decoration: none;
   color: inherit;
+  position: relative;
+  top: 0.1rem;
 }
 
 ul {
@@ -1540,7 +1566,7 @@ img::selection {
     margin: 0 auto;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
   .container {
     width: 340px;
     margin: 0 auto;
@@ -1624,7 +1650,7 @@ img::selection {
     text-align: center;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
   .most-selled .most_title {
     text-align: center;
     width: 100%;
@@ -1703,10 +1729,11 @@ html {
   font-size: 10px;
   scroll-behavior: smooth;
 }
-
 a {
   text-decoration: none;
   color: inherit;
+  position: relative;
+  top: 0.1rem;
 }
 
 ul {
@@ -1742,7 +1769,7 @@ img::selection {
     margin: 0 auto;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
   .container {
     width: 340px;
     margin: 0 auto;
@@ -1819,7 +1846,7 @@ img::selection {
     display: none;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
   .best .best_title {
     width: 100%;
     display: grid;
@@ -1897,10 +1924,11 @@ html {
   font-size: 10px;
   scroll-behavior: smooth;
 }
-
 a {
   text-decoration: none;
   color: inherit;
+  position: relative;
+  top: 0.1rem;
 }
 
 ul {
@@ -1936,7 +1964,7 @@ img::selection {
     margin: 0 auto;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
   .container {
     width: 340px;
     margin: 0 auto;
@@ -2076,6 +2104,12 @@ img::selection {
   color: #019ec2;
   border: 1px solid #019ec2;
 }
+.order .order-holder .order_content .memory-size ul li .memory:active {
+  position: relative;
+  top: 0.1rem;
+  color: #019ec2;
+  border: 1px solid #019ec2;
+}
 .order .order-holder .order_content .btn--order {
   margin-top: 5.6rem;
 }
@@ -2088,7 +2122,7 @@ img::selection {
     width: 30rem;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
   .order .order_title {
     width: 100%;
     display: grid;
@@ -2117,6 +2151,9 @@ img::selection {
     -webkit-transform-style: preserve-3d;
             transform-style: preserve-3d;
   }
+  .order .order-holder .order_gallery {
+    cursor: pointer;
+  }
   .order .order-holder .order_gallery,
   .order .order-holder .order_content {
     position: absolute;
@@ -2139,6 +2176,10 @@ img::selection {
     padding: 1rem 2rem;
   }
   .order .order-holder:hover {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  .order .order-holder:focus {
     -webkit-transform: rotateY(180deg);
             transform: rotateY(180deg);
   }
@@ -2201,10 +2242,11 @@ html {
   font-size: 10px;
   scroll-behavior: smooth;
 }
-
 a {
   text-decoration: none;
   color: inherit;
+  position: relative;
+  top: 0.1rem;
 }
 
 ul {
@@ -2240,7 +2282,7 @@ img::selection {
     margin: 0 auto;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
   .container {
     width: 340px;
     margin: 0 auto;

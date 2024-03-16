@@ -108,6 +108,22 @@
     }
 }
 
+@media screen and (max-width:1080px) {
+    .categories{
+        .categories_cards-holder{
+            .third{
+                .image{
+                    .img{
+                        width: 28rem;
+                        border-radius: $radius;
+                        margin-bottom: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width:768px) {
     .categories{
         .categories_title{
@@ -123,7 +139,7 @@
     }
 }
 
-@media screen and (max-width:375px) {
+@media screen and (max-width:376px) {
     .categories{
         .categories_title{
             text-align: center;

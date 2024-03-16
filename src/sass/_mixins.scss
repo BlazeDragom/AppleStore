@@ -1,3 +1,36 @@
+@mixin respond-to($media) {
+    @if $media=='phone-375' {
+        @media (max-width: 376px) {
+            @content;
+        }
+    }
+    @else if $media=='phone-360' {
+        @media (max-width: 360px) {
+            @content;
+        }
+    }
+    @else if $media=='phone-412' {
+        @media (max-width: 412px) {
+            @content;
+        }
+    }
+    @else if $media=='phone-390' {
+        @media (max-width: 390px) {
+            @content;
+        }
+    }
+
+    @else if $media=='laptop' {
+        @media (max-width: 1024px) {
+            @content;
+        }
+    }
+}
+@mixin click(){
+    position: relative;
+    top: 0.1rem;
+}
+
 @mixin flex-row() {
     display: flex;
     justify-content: space-between;

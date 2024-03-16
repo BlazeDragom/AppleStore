@@ -98,7 +98,7 @@
           margin: 0;
 
           border-radius: 30px;
-          outline:none;
+          outline: none;
           cursor: pointer;
 
           -webkit-appearance: none;
@@ -189,24 +189,28 @@
   }
 }
 
-@media screen and (max-width:375px) {
-  .header{
+@media screen and (max-width: 376px) {
+  .header {
     margin: 3rem 2rem;
-    .header_content{
-      .burger-menu{
-        .burger_list{
+    .header_content {
+      .burger-menu {
+        .burger_list {
+          width: 340px;
           gap: 1rem;
           left: -28rem;
-          .second{
-            top: 3.5rem;
-            left: -4rem;
-          }
-          .third{
-            top: 3.5rem;
-            left: -4rem;
-          }
-          .fourth{
-            left: -8rem;
+          li {
+            position: relative;
+            &:nth-child(2) {
+              top: 3.5rem;
+              left: -4rem;
+            }
+            &:nth-child(3) {
+              top: 3.5rem;
+              left: -4rem;
+            }
+            &:nth-child(4){
+              left: -8rem;
+            }
           }
         }
       }
