@@ -203,6 +203,38 @@
     }
   }
 }
+@media screen and (max-width: 412px) {
+  .header {
+    margin: 3rem 2rem;
+    .header_content {
+      .burger-menu {
+        .burger_list {
+          width: 340px;
+          gap: 1rem;
+          left: -28rem;
+          li {
+            position: relative;
+            &:first-child{
+              left: -2rem;
+            }
+            &:nth-child(2) {
+              top: 3.5rem;
+              left: -6rem;
+            }
+            &:nth-child(3) {
+              top: 3.5rem;
+              left: -6rem;
+            }
+            &:nth-child(4){
+              left: -10rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 391px){
   .header {
     margin: 3rem 2rem;
