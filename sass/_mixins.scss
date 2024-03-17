@@ -5,7 +5,7 @@
         }
     }
     @else if $media=='phone-360' {
-        @media (max-width: 360px) {
+        @media (max-width: 361px) {
             @content;
         }
     }
@@ -15,7 +15,7 @@
         }
     }
     @else if $media=='phone-390' {
-        @media (max-width: 390px) {
+        @media (max-width: 391px) {
             @content;
         }
     }

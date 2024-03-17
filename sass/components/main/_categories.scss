@@ -139,7 +139,7 @@
     }
 }
 
-@media screen and (max-width:376px) {
+@media (min-width:360px) and (max-width: 413px) {
     .categories{
         .categories_title{
             text-align: center;

@@ -119,6 +119,28 @@ img{
         margin: 0 auto;
     }
 }
+
+@media screen and (max-width:413px) {
+    .container{
+        width: 390px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width:391px) {
+    .container{
+        width: 360px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width:361px) {
+    .container{
+        width: 328px;
+        margin: 0 auto;
+    }
+}
+
 @media screen and (max-width:376px) {
     .container{
         width: 340px;

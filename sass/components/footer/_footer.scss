@@ -36,11 +36,13 @@
             font-size: $fz-m;
             transition: $transition-fast $ease-in;
             &:hover{
+                transform:translate(2rem);
                 color: $clr-dark-cyan;
-                font-weight: 700;
+
             }
             &:active{
-                text-shadow: 0 0px 2px $clr-blue;
+                @include click;
+                // text-shadow: 0 0px 2px $clr-blue;
             }
         }
         .text{
@@ -49,10 +51,10 @@
             transition: $transition-fast $ease-out;
             &:hover{
                 color: $clr-dark-cyan;
-                font-weight: 700;
             }
             &:active{
-                text-shadow: 0 0px 2px $clr-blue;
+                @include click;
+                // text-shadow: 0 0px 2px $clr-blue;
             }
         }
     }
@@ -102,7 +104,7 @@
     }
 }
 
-@media screen and (max-width:376px) {
+@media (min-width:360px) and (max-width:412px) {
     .footer{
         height: 20rem;
         .footer-top{
